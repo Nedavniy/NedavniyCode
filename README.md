@@ -1,12 +1,39 @@
-# React + Vite
+# Danil Nedavniy Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Personal portfolio of **Danil Nedavniy**, showcasing web development skills and projects. This project is under active development and will serve as a professional presence for potential employers or clients.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 About the Project
 
-## Expanding the ESLint configuration
+This is a **work-in-progress** personal portfolio website built with **React, JavaScript, HTML, and CSS**. It will include:
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Hero section with introduction  
+- Portfolio section showcasing projects  
+- Header and navigation  
+- Responsive design for different devices  
+- Interactive components using React  
+
+The goal is to continuously update and improve this site as new projects are completed.
+
+---
+
+## 🛠 Tech Stack
+
+- **React** – for building the user interface  
+- **JavaScript (ES6+)** – logic and interactivity  
+- **HTML5 & CSS3** – layout and styling  
+- **Vite** – development build tool  
+
+---
+
+## 📌 Status
+- 🚧 In development  
+- 🔜 Projects will be added soon 
+
+
+## 📌 How to Run Locally
+
+1. Clone the repository:  
+```bash
+git clone https://github.com/Nedavniy/NedavniyCode.git
