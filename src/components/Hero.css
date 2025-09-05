@@ -1,0 +1,65 @@
+.hero__section {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    min-height: 100vh;
+}
+
+.hero__heading {
+    font-weight: 900;
+    font-size: 96px;
+    text-transform: uppercase;
+}
+
+
+.hero__button {
+    color: #fff;
+    cursor: pointer;
+    margin-right: 24px;
+}
+
+.hero__button--list {
+    max-width: 400px;
+    width: 100%;
+    margin-top: 30px;
+    display: flex;
+}
+
+.hero__button {
+    border-radius: 999px;
+    height: 40px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+}
+
+.contact__button {
+    background-color: var(--modify__blue);
+    width: 180px;
+}
+
+.download__button {
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 300px;
+}
+
+.hero__img {
+    position: relative;
+    width: 430px;
+    height: auto;
+}
+
+.hero__img--front {
+    position: relative;
+    z-index: 2;
+}
+
+.hero__img--bg {
+    position: absolute;
+    top: -60px;
+    left: 20px;
+    width: 100%;
+    z-index: 1;
+    opacity: 0.8;
+}

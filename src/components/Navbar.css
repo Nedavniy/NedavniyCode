@@ -1,0 +1,6 @@
+.navbar__list {
+    display: flex;
+    justify-content: space-between;
+    gap: 35px;
+    padding: 10px 10px;
+}

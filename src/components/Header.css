@@ -1,0 +1,15 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    margin: 35px 0px;
+    margin-bottom: 150px;
+}
+.header__logo {
+    margin-bottom: 40px;
+}
+
+.header__logo span {
+    font-weight: 1000;
+    font-size: 30px;
+    letter-spacing: 3px;
+}
