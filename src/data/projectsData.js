@@ -1,4 +1,4 @@
-export const Projects = [
+ const Projects = [
         {
             id: 0,
             title: 'NedavniyCode',
@@ -24,4 +24,6 @@ export const Projects = [
             github: 'https://github.com/Nedavniy/Counter-App',
         }
 
-    ]
+]
+    
+export default Projects;
