@@ -10,7 +10,7 @@
         {
             id: 1,
             title: 'ToDo App',
-            image: '',
+            image: 'https://github.com/Nedavniy/NedavniyCode/blob/main/src/assets/images/toDoApp.png?raw=true',
             description: 'Simple ToDo App built with vanilla JavaScript, HTML, and CSS',
             stack: ['HTML', 'CSS', 'JS'],
             github: 'https://github.com/Nedavniy/ToDo-App'
@@ -18,7 +18,7 @@
         {
             id: 2,
             title: 'Counter-App',
-            image: '',
+            image: 'https://github.com/Nedavniy/NedavniyCode/blob/main/src/assets/images/counterApp.png?raw=true',
             description: 'Simple Counter App built with HTML, CSS, and JavaScript. Interactive UI with increment, decrement, and reset functionality.',
             stack: ['HTML', 'CSS', 'JS'],
             github: 'https://github.com/Nedavniy/Counter-App',
