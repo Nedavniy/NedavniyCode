@@ -93,3 +93,8 @@ body {
   background-color: var(--primary);
   color: var(--primary__font);
 }
+
+h2 {
+  font-size: 64px;
+  font-weight: 800;
+}
