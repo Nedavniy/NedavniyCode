@@ -5,7 +5,7 @@ import Card from './Card'
 
 function Portfolio() {
   return (
-      <section className='portfolio__section'>
+      <section className='portfolio__section' id='projects'>
         <div className='portfolio__works'>
               <h2 className='works__heading'>My recent <span className='modify__blue'>works</span></h2>
         </div>

@@ -1,28 +1,30 @@
-.hero__section {
+.hero {
     display: flex;
     justify-content: space-between;
-    align-items: start;
+    align-items: center;
     min-height: 100vh;
+}
+
+.hero__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .hero__heading {
     font-weight: 900;
-    font-size: 96px;
+    font-size: 6rem;
     text-transform: uppercase;
+    margin-bottom: 2rem;
 }
 
-
-.hero__button {
-    color: #fff;
-    cursor: pointer;
-    margin-right: 24px;
+.hero__heading--highlight {
+    color: var(--modify__blue);
 }
 
-.hero__button--list {
-    max-width: 400px;
-    width: 100%;
-    margin-top: 30px;
+.hero__buttons {
     display: flex;
+    gap: 1.5rem;
 }
 
 .hero__button {
@@ -31,35 +33,46 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    white-space: nowrap;
+    cursor: pointer;
+    color: #fff;
+    font-weight: 600;
+    padding: 0 1.25rem;
 }
 
-.contact__button {
+.hero__button--contact {
     background-color: var(--modify__blue);
     width: 180px;
 }
 
-.download__button {
+.hero__button--download {
     background-color: rgba(0, 0, 0, 0.3);
     width: 300px;
 }
 
-.hero__img {
+.hero__images {
     position: relative;
-    width: 430px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50rem;
+}
+
+.hero__image {
+    max-width: 100%;
     height: auto;
 }
 
-.hero__img--front {
-    position: relative;
-    z-index: 2;
+.hero__image--bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    opacity: 0.6;
+    width: 31.25rem;
 }
 
-.hero__img--bg {
-    position: absolute;
-    top: -60px;
-    left: 20px;
-    width: 100%;
-    z-index: 1;
-    opacity: 0.8;
+.hero__image--front {
+    position: relative;
+    z-index: 2;
+    width: 350px;
 }

@@ -6,7 +6,7 @@ function Header() {
     <>
         <header className='header '>
             <div className='header__logo'>
-                <span>nedavnii</span>
+                <span>nedavniy</span>
             </div>
         
         <Navbar />

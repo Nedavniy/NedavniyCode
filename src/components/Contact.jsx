@@ -3,7 +3,7 @@ import './Contact.css'
 
 function Contact() {
   return (
-    <section className='contact__section container'>
+    <section className='contact__section' id='contact'>
       <div className='contact__heading--div'>
         <h2 className='heading__h2'>
           Contact <span className='modify__blue'>me</span>
@@ -37,7 +37,7 @@ function Contact() {
 
           <button type="submit">Send Message</button>
         </form>
-      </div>
+        </div>
     </section>
   )
 }

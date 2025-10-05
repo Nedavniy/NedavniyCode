@@ -5,7 +5,7 @@ import InfoImgBg from '../assets/info__img--bg.svg'
 
 function About() {
   return (
-      <section className='about__section'>
+      <section className='about__section' id='about'>
           <div className="about__me">
             <div className='about__info'>
                 <h2 className='info__heading'>

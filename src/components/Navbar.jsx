@@ -1,21 +1,44 @@
-import React, { useState } from 'react';
-import './Navbar.css';
+import React, { useState } from "react";
+import "./Navbar.css";
 
 function Navbar() {
   const [active, setActive] = useState("home");
 
-  const menuItems = ["home", "projects", "about", "contact"];
+  const menuItems = [
+    { id: "home", label: "Home", anchor: "#hero" },
+    { id: "about", label: "About", anchor: "#about" },
+    { id: "projects", label: "Projects", anchor: "#projects" },
+    { id: "contact", label: "Contact", anchor: "#contact" },
+  ];
+
+  const handleClick = (id) => {
+    setActive(id);
+    const section = document.querySelector(`#${id}`);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  };
 
   return (
     <nav className="navbar">
       <ul className="navbar__list">
-        {menuItems.map((item) => (
+        {menuItems.map(({ id, label, anchor }) => (
           <li
-            key={item}
-            className={`navbar__item ${active === item ? "navbar__item--active" : ""}`}
-            onClick={() => setActive(item)}
+            key={id}
+            className={`navbar__item ${
+              active === id ? "navbar__item--active" : ""
+            }`}
           >
-            {item.charAt(0).toUpperCase() + item.slice(1)}
+            <a
+              href={anchor}
+              onClick={(e) => {
+                e.preventDefault();
+                handleClick(id);
+              }}
+              className="navbar__link"
+            >
+              {label}
+            </a>
           </li>
         ))}
       </ul>

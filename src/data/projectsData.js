@@ -5,7 +5,7 @@
             image: 'https://github.com/Nedavniy/NedavniyCode/blob/main/src/assets/images/NedavniyCode.png?raw=true',
             description: 'Personal portfolio of Danil Nedavniy, showcasing web development projects, skills in React, HTML, CSS, and JavaScript, and experience building modern, responsive interfaces.',
             stack: ['React', 'HTML', 'CSS', 'JS'],
-            github: 'https://github.com/Nedavniy/NedavniyCode'
+            link: 'https://github.com/Nedavniy/NedavniyCode',
         },
         {
             id: 1,
@@ -13,7 +13,7 @@
             image: 'https://github.com/Nedavniy/NedavniyCode/blob/main/src/assets/images/toDoApp.png?raw=true',
             description: 'Simple ToDo App built with vanilla JavaScript, HTML, and CSS',
             stack: ['HTML', 'CSS', 'JS'],
-            github: 'https://github.com/Nedavniy/ToDo-App'
+            link: 'https://github.com/Nedavniy/ToDo-App'
         },
         {
             id: 2,
@@ -21,7 +21,7 @@
             image: 'https://github.com/Nedavniy/NedavniyCode/blob/main/src/assets/images/counterApp.png?raw=true',
             description: 'Simple Counter App built with HTML, CSS, and JavaScript. Interactive UI with increment, decrement, and reset functionality.',
             stack: ['HTML', 'CSS', 'JS'],
-            github: 'https://github.com/Nedavniy/Counter-App',
+            link: 'https://github.com/Nedavniy/Counter-App',
         }
 
 ]
