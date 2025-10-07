@@ -31,6 +31,24 @@ The goal is to continuously update and improve this site as new projects are com
 - 🚧 In development  
 - 🔜 Projects will be added soon 
 
+---
+
+### 📝 Recent Updates
+
+**2025-10-05 – General Improvements & Bug Fixes**
+
+* Fixed multiple bugs across the site
+* Improved code quality and structure
+* Made buttons interactive for better user experience
+* Enhanced responsiveness and layout consistency
+
+**2025-10-07 – Mobile Responsiveness Updates (≤480px)**
+
+* Improved layout and spacing across the entire site for small screens
+* Adjusted text, buttons, and sections for better mobile usability
+* Ongoing work to finalize full mobile optimization
+
+---
 
 ## 📌 How to Run Locally
 
