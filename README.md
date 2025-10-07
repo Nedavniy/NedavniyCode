@@ -1,6 +1,8 @@
-# Danil Nedavniy Portfolio
+# Danylo Nedavnii Portfolio
 
-Personal portfolio of **Danil Nedavniy**, showcasing web development skills and projects. This project is under active development and will serve as a professional presence for potential employers or clients.
+Personal portfolio of **Danylo Nedavnii**, showcasing web development skills and projects. This project is under active development and will serve as a professional presence for potential employers or clients.
+
+You can view the current deployed version of the site on Netlify here: [Live Demo](https://nedavniycode.netlify.app/)
 
 ---
 
