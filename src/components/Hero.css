@@ -76,3 +76,19 @@
     z-index: 2;
     width: 350px;
 }
+
+@media (max-width: 480px) {
+    .hero__heading {
+        font-size: 50px;
+    }
+    .hero {
+        flex-wrap: wrap;
+    }
+    .hero__buttons {
+        display: flex;
+        flex-direction: column;
+    }
+    .hero__button {
+        min-width: 100%;
+    }
+}

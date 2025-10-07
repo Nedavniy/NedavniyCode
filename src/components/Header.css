@@ -10,3 +10,13 @@
     font-size: 30px;
     letter-spacing: 3px;
 }
+
+@media (max-width: 480px) {
+    .header {
+        margin-top: 1rem;
+        justify-content: center;
+    }
+    .header__logo {
+        display: none;
+    }
+}

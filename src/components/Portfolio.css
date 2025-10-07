@@ -24,3 +24,13 @@
     max-width: 1220px;
     margin: 0 auto;
 }
+
+@media (max-width: 480px) { 
+    .works__heading {
+        font-size: 44px;
+    }
+    .portfolio__list {
+        display: flex;
+    flex-wrap: wrap;
+}
+}

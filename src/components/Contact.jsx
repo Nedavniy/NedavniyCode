@@ -25,7 +25,7 @@ function Contact() {
             </div>
           </div>
 
-          <div>
+          <div className='contact-field'>
             <label htmlFor="message">Your Message</label>
             <textarea 
               placeholder='Message' 
@@ -35,7 +35,7 @@ function Contact() {
             ></textarea>
           </div>
 
-          <button type="submit">Send Message</button>
+          <button className='submit--button' type="submit">Send Message</button>
         </form>
         </div>
     </section>
