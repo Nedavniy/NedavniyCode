@@ -52,6 +52,19 @@ The goal is to continuously update and improve this site as new projects are com
 
 ---
 
+2025-10-19 – Footer Structure & UI Enhancements
+
+✨ Added a fully structured and styled footer
+
+💬 Included navigation links, social media icons, and contact information
+
+🎨 Implemented hover animations for icons, links, and contact details
+
+📱 Improved visual balance and responsiveness across sections
+
+⚙️ General code cleanup and CSS refinements for consistency
+
+
 ## 📌 How to Run Locally
 
 1. Clone the repository:  
