@@ -72,14 +72,6 @@ select {
   --primary__font: rgba(238, 238, 238, 1);
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
-section {
-  align-items: center;
-}
-
 .modify__blue {
   color: var(--modify__blue);
 }
