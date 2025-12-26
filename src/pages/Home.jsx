@@ -7,24 +7,24 @@ import Contact from '../components/Contact.jsx'
 import Footer from '../components/Footer.jsx'
 
 function Home() {
-
     return (
         <>
-            <header className='container'>
+            <div className="container">
                 <Header />
-            </header>
-            <main className='container'>
+            </div>
+            
+            <main>
                 <Hero />
                 <About />
                 <Portfolio />
                 <Contact />
             </main>
-            <footer className='container'>
+            
+            <footer>
                 <Footer />
             </footer>
         </>
     )
-
 }
 
 export default Home
