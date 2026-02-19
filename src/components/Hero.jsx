@@ -56,7 +56,7 @@ function Hero() {
           
           <h1 className="hero__title">
             <p>Danylo</p>
-            <p><span className='hero__surname'>Nedavnii</span></p>
+            <p><span className='text-gradient'>Nedavnii</span></p>
           </h1>
           
           <div className="hero__role">
@@ -78,30 +78,30 @@ function Hero() {
           
           <div className="hero__description">
             <p>
-              Frontend developer who builds websites the right way.
+              Frontend developer who builds websites the <span className='text-gradient'>right way</span>
               <br />
-              Websites that work exactly as intended.
+              Websites that work exactly as intended
             </p>
 
             <p>
-              No hacks. No random decisions. No “good enough.”
+              No hacks. No random decisions. No “good enough”
             </p>
 
             <p>
-              For me, quality isn’t a checkbox — it’s the foundation of the product.
-              Thoughtful architecture, clean code, predictable interfaces, and attention to detail aren’t extras — they’re the standard.
+              For me, <span className='text-gradient'>quality isn’t a checkbox</span> — it’s the foundation of the product.
+              Thoughtful architecture, clean code, predictable interfaces, and attention to detail aren’t extras — they’re the standard
             </p>
 
             <p>I build interfaces that:</p>
 
-            <ul>
-              <li>Work <span className=''>reliably</span></li>
+            <ul className='description__list text-gradient'> 
+              <li>Work reliably</li>
               <li>Look clean</li>
               <li>Scale properly</li>
               <li>Don’t break a month later</li>
             </ul>
 
-            <p>If it’s built — it’s built right.</p>
+            <p>Clean code. Predictable results</p>
         </div>
           
           <div className="hero__stats">
@@ -116,8 +116,8 @@ function Hero() {
             </div>
             <div className="stat__divider"></div>
             <div className="stat__item">
-              <span className="stat__number">100%</span>
-              <span className="stat__label">Client Satisfaction</span>
+              <span className="stat__number">Quality</span>
+              <span className="stat__label">Clean & scalable solutions</span>
             </div>
           </div>
           
@@ -178,13 +178,13 @@ function Hero() {
             />
             <div className="hero__image-glow"></div>
             
-            {/* Декоративные элементы */}
+            {/* Decorative Elements */}
             <div className="floating-element floating-element--1"></div>
             <div className="floating-element floating-element--2"></div>
             <div className="floating-element floating-element--3"></div>
             
             <div className="hero__badge">
-              <span className="badge__text">Available for work</span>
+              <span className="badge__text text-gradient">Available for work</span>
               <div className="badge__dot"></div>
             </div>
           </div>

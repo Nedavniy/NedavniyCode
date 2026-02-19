@@ -73,6 +73,12 @@
     animation: wave 2.5s ease-in-out infinite;
 }
 
+.hero__description ul {
+    list-style: none;
+    margin-left: 15px;
+    margin-bottom: 20px;
+}
+
 @keyframes wave {
 
     0%,
@@ -400,7 +406,6 @@
 .badge__text {
     font-size: 0.875rem;
     font-weight: 500;
-    color: var(--text-primary);
 }
 
 .badge__dot {

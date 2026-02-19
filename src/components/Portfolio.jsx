@@ -10,9 +10,8 @@ function Portfolio() {
   const [isVisible, setIsVisible] = useState(false)
   const [selectedProject, setSelectedProject] = useState(null)
   const sectionRef = useRef(null)
-  const [viewMode, setViewMode] = useState('grid') // 'grid' или 'list'
+  const [viewMode, setViewMode] = useState('grid')
 
-  // Все уникальные стеки из проектов
   const allStacks = ['all', ...new Set(Projects.flatMap(project => project.stack))]
 
   const filteredProjects = selectedCategory === 'all' 
@@ -109,10 +108,6 @@ function Portfolio() {
 
       <div className='container'>
         <div className={`portfolio__header ${isVisible ? 'visible' : ''}`}>
-          <div className='portfolio__badge'>
-            <FaFilter />
-            <span>Portfolio</span>
-          </div>
           
           <h2 className='portfolio__title'>
             Featured <span className='text-gradient'>Projects</span>
@@ -120,7 +115,6 @@ function Portfolio() {
           
           <p className='portfolio__subtitle'>
             A selection of my recent work showcasing frontend development skills 
-            and attention to detail
           </p>
         </div>
 
@@ -277,7 +271,7 @@ function Portfolio() {
         </div>
       </div>
 
-      {/* Модальное окно проекта */}
+      {/* Modal */}
       {selectedProject && (
         <div className='project__modal' onClick={closeProjectModal}>
           <div className='modal__content' onClick={(e) => e.stopPropagation()}>

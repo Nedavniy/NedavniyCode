@@ -3,7 +3,7 @@ import './About.css'
 import InfoImg from '../assets/info__img.svg'
 import InfoImgBg from '../assets/info__img--bg.svg'
 
-// Иконки для навыков
+// Icons
 import { 
   FaHtml5, FaCss3Alt, FaJs, FaReact, 
   FaGitAlt, FaGithub, FaFigma, 
@@ -19,39 +19,39 @@ function About() {
 
   const skillsData = {
     core: [
-      { name: 'HTML5', icon: <FaHtml5 />, level: 95, color: '#E34F26' },
-      { name: 'CSS3', icon: <FaCss3Alt />, level: 90, color: '#1572B6' },
-      { name: 'JavaScript', icon: <FaJs />, level: 88, color: '#F7DF1E' },
-      { name: 'TypeScript', icon: <SiTypescript />, level: 80, color: '#3178C6' },
-      { name: 'Sass/SCSS', icon: <FaSass />, level: 85, color: '#CC6699' }
+      { name: 'HTML5', type: ["Core"], icon: <FaHtml5 />,  color: '#E34F26' },
+      { name: 'CSS3', type: ["Core"], icon: <FaCss3Alt />,  color: '#1572B6' },
+      { name: 'JavaScript', type: ["Core"], icon: <FaJs />,  color: '#F7DF1E' },
+      { name: 'TypeScript', type: ["Core"], icon: <SiTypescript />, level: 80, color: '#3178C6' },
+      { name: 'Sass/SCSS', type: ["Core"], icon: <FaSass />,  color: '#CC6699' }
     ],
     frontend: [
-      { name: 'React.js', icon: <FaReact />, level: 92, color: '#61DAFB' },
-      { name: 'Vite', icon: <SiVite />, level: 85, color: '#646CFF' },
-      { name: 'Tailwind CSS', icon: <SiTailwindcss />, level: 88, color: '#06B6D4' },
-      { name: 'Next.js', icon: <SiVercel />, level: 75, color: '#000000' }
+      { name: 'React.js', type: ["Frameworks"], icon: <FaReact />,  color: '#61DAFB' },
+      { name: 'Vite', type: ["Frameworks"], icon: <SiVite />,  color: '#646CFF' },
+      { name: 'Tailwind CSS', type: ["Frameworks"], icon: <SiTailwindcss />, color: '#06B6D4' },
+      { name: 'Next.js', type: ["Frameworks"], icon: <SiVercel />, color: '#000000' }
     ],
     tools: [
-      { name: 'Git', icon: <FaGitAlt />, level: 90, color: '#F05032' },
-      { name: 'GitHub', icon: <FaGithub />, level: 88, color: '#181717' },
-      { name: 'VS Code', icon: <VscVscode />, level: 95, color: '#007ACC' },
-      { name: 'npm', icon: <FaNpm />, level: 85, color: '#CB3837' },
-      { name: 'ESLint', icon: <SiEslint />, level: 80, color: '#4B32C3' },
-      { name: 'Prettier', icon: <SiPrettier />, level: 85, color: '#F7B93E' }
+      { name: 'Git', type: ["Tools"], icon: <FaGitAlt />, color: '#F05032' },
+      { name: 'GitHub', type: ["Tools"], icon: <FaGithub />, color: '#181717' },
+      { name: 'VS Code', type: ["Tools"], icon: <VscVscode />, color: '#007ACC' },
+      { name: 'npm', type: ["Tools"], icon: <FaNpm />, color: '#CB3837' },
+      { name: 'ESLint', type: ["Tools"], icon: <SiEslint />, color: '#4B32C3' },
+      { name: 'Prettier', type: ["Tools"], icon: <SiPrettier />, color: '#F7B93E' }
     ],
     design: [
-      { name: 'Figma', icon: <FaFigma />, level: 85, color: '#F24E1E' },
-      { name: 'Photoshop', icon: <SiAdobephotoshop />, level: 70, color: '#31A8FF' },
-      { name: 'UI/UX Design', icon: '🎨', level: 75, color: '#8B5CF6' }
+      { name: 'Figma', type: ['Design'], icon: <FaFigma />, color: '#F24E1E' },
+      { name: 'Photoshop', type: ["Design"], icon: <SiAdobephotoshop />, color: '#31A8FF' },
+      { name: 'UI/UX Design', type: ["Design"], icon: '🎨', color: '#8B5CF6' }
     ]
   }
 
   const categories = [
     { id: 'all', label: 'All Skills' },
-    { id: 'core', label: 'Core Technologies' },
-    { id: 'frontend', label: 'Frontend Frameworks' },
-    { id: 'tools', label: 'Tools & Ecosystem' },
-    { id: 'design', label: 'Design & UI/UX' }
+    { id: 'core', label: 'Core' },
+    { id: 'frontend', label: 'Frameworks' },
+    { id: 'tools', label: 'Tools' },
+    { id: 'design', label: 'Design' }
   ]
 
   useEffect(() => {
@@ -86,19 +86,13 @@ function About() {
     <section className='about__section' id='about' ref={sectionRef}>
       <div className='about__container container'>
         <div className={`about__header ${isVisible ? 'visible' : ''}`}>
-          <div className='about__badge'>
-            <span className='badge__text'>About Me</span>
-            <div className='badge__line'></div>
-          </div>
           
           <h2 className='about__heading'>
-            Crafting Digital <span className='text-gradient'>Experiences</span> 
-            <br />That <span className='text-gradient'>Inspire</span>
+            Frontend Developer with a <br /> Focus on <span className='text-gradient'>Quality</span> 
           </h2>
           
           <p className='about__subheading'>
-            Passionate frontend developer focused on creating exceptional 
-            web experiences with modern technologies
+            Commercial developer with agency and freelance experience.
           </p>
         </div>
 
@@ -121,10 +115,8 @@ function About() {
 
               <div className='card__body'>
                 <p className='about__description'>
-                  I specialize in building responsive, accessible, and 
-                  performant web applications using modern frontend technologies. 
-                  With a strong focus on user experience and clean code, I transform 
-                  complex problems into intuitive digital solutions.
+                  I work with React and modern frontend tools to build applications that are stable, scalable, and easy to maintain.
+                  I prefer thoughtful solutions over quick patches.
                 </p>
                 
                 <div className='about__stats'>
@@ -139,7 +131,7 @@ function About() {
                   </div>
                   <div className='stat__divider'></div>
                   <div className='stat'>
-                    <div className='stat__number'>5+</div>
+                    <div className='stat__number'>10+</div>
                     <div className='stat__label'>Technologies</div>
                   </div>
                 </div>
@@ -159,7 +151,7 @@ function About() {
               <div className='feature'>
                 <div className='feature__icon'>⚡</div>
                 <div className='feature__content'>
-                  <h4>Fast & Performant</h4>
+                  <h4>Performance-Focused</h4>
                   <p>Optimized code for maximum performance and speed</p>
                 </div>
               </div>
@@ -183,8 +175,8 @@ function About() {
               <div className='feature'>
                 <div className='feature__icon'>🎨</div>
                 <div className='feature__content'>
-                  <h4>Modern UI/UX</h4>
-                  <p>Intuitive interfaces with attention to detail</p>
+                  <h4>UI with Clear Logic</h4>
+                  <p>Clear structure and consistent interaction patterns</p>
                 </div>
               </div>
             </div>
@@ -211,56 +203,33 @@ function About() {
 
             <div className='skills__grid'>
               {getFilteredSkills().map((skill, index) => (
-                <div 
-                  key={skill.name} 
+                <div
+                  key={skill.name}
                   className='skill__card'
                   style={{ animationDelay: `${index * 0.1}s` }}
                 >
                   <div className='skill__header'>
-                    <div 
+                    <div
                       className='skill__icon'
-                      style={{ color: skill.color, backgroundColor: `${skill.color}15` }}
+                      style={{
+                        color: skill.color,
+                        backgroundColor: `${skill.color}15`
+                      }}
                     >
                       {skill.icon}
                     </div>
+
                     <span className='skill__name'>{skill.name}</span>
                   </div>
-                  
-                  <div className='skill__level'>
-                    <div className='level__bar'>
-                      <div 
-                        className='level__fill'
-                        style={{ 
-                          width: `${skill.level}%`,
-                          background: `linear-gradient(90deg, ${skill.color}, ${skill.color}80)`
-                        }}
-                      ></div>
-                    </div>
-                    <span className='level__percentage'>{skill.level}%</span>
-                  </div>
-                  
+
                   <div className='skill__tags'>
-                    <span className='tag'>Frontend</span>
-                    <span className='tag'>Development</span>
+                    <span className='tag'>{skill.type}</span>
                   </div>
                 </div>
               ))}
             </div>
 
-            <div className='skills__legend'>
-              <div className='legend__item'>
-                <div className='legend__dot' style={{ background: '#10B981' }}></div>
-                <span>Advanced (85-100%)</span>
-              </div>
-              <div className='legend__item'>
-                <div className='legend__dot' style={{ background: '#F59E0B' }}></div>
-                <span>Intermediate (70-84%)</span>
-              </div>
-              <div className='legend__item'>
-                <div className='legend__dot' style={{ background: '#EF4444' }}></div>
-                <span>Learning (Below 70%)</span>
-              </div>
-            </div>
+           
           </div>
         </div>
 
