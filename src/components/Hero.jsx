@@ -22,7 +22,7 @@ function Hero() {
   const handleDownloadCV = () => {
 
     const link = document.createElement('a');
-    link.href = '/cv.pdf'; 
+    link.href = 'https://github.com/Nedavniy/NedavniyCode/blob/f7dcc648e6ed3e8f0711b5f007fec4a1047ca557/public/portfolio/Danylo-Nedavnii_CV.pdf'; 
     link.download = 'Nedavnii_Danylo_CV.pdf';
     link.click()
   };
