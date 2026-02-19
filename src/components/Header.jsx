@@ -10,8 +10,7 @@ function Header() {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 50)
       
-      // Определяем активную секцию
-      const sections = ['home', 'about', 'projects', 'contact']
+      const sections = ['home', 'about', 'projects']
       const currentSection = sections.find(section => {
         const element = document.getElementById(section)
         if (element) {
@@ -48,8 +47,7 @@ function Header() {
   const navItems = [
     { id: 'home', label: 'Home' },
     { id: 'about', label: 'About' },
-    { id: 'projects', label: 'Portfolio' },
-    { id: 'contact', label: 'Contact' }
+    { id: 'projects', label: 'Portfolio' }
   ]
 
   return (
@@ -62,7 +60,6 @@ function Header() {
           tabIndex={0}
           onKeyDown={(e) => e.key === 'Enter' && scrollToSection('home')}
         >
-          <span className="logo-icon">💻</span>
           <span className="logo-text">
             Nedavniy<span className="logo-highlight">Code</span>
           </span>

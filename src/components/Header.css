@@ -68,13 +68,12 @@
 .nav {
     display: flex;
     align-items: center;
-    gap: 2rem;
 }
 
 .nav-list {
     display: flex;
-    gap: 1.5rem;
     list-style: none;
+    gap: 1rem;
 }
 
 .nav-link {
@@ -88,8 +87,6 @@
     cursor: pointer;
     transition: color var(--transition);
     display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 
 .nav-link:hover,
@@ -159,7 +156,7 @@
     transform: rotate(-45deg) translate(6px, -6px);
 }
 
-/* Мобильная версия */
+/* Mobile version */
 @media (max-width: 768px) {
     .menu-toggle {
         display: block;
@@ -167,7 +164,7 @@
 
     .nav {
         position: fixed;
-        top: 0;
+        top: 80px;
         left: 0;
         right: 0;
         bottom: 0;
@@ -188,7 +185,7 @@
     .nav-list {
         flex-direction: column;
         align-items: center;
-        gap: 2rem;
+        justify-content: center;
         margin-bottom: 2rem;
     }
 

@@ -11,7 +11,7 @@ function Hero() {
   useEffect(() => {
     setIsVisible(true);
     
-    // Анимация смены текста
+
     const interval = setInterval(() => {
       setTextIndex((prev) => (prev + 1) % roles.length);
     }, 3000);
@@ -20,11 +20,11 @@ function Hero() {
   }, []);
 
   const handleDownloadCV = () => {
-    // Здесь можно добавить логику скачивания CV
+
     const link = document.createElement('a');
-    link.href = '/cv.pdf'; // Укажите путь к вашему CV
-    link.download = 'Nedavniy_Danil_CV.pdf';
-    link.click();
+    link.href = '/cv.pdf'; 
+    link.download = 'Nedavnii_Danylo_CV.pdf';
+    link.click()
   };
 
   const scrollToContact = () => {
@@ -53,14 +53,10 @@ function Hero() {
 
       <div className="container hero__container">
         <div className={`hero__content ${isVisible ? 'visible' : ''}`}>
-          <div className="hero__greeting">
-            <span className="hero__wave">👋</span>
-            <span className="hero__greeting-text">Hello, I'm</span>
-          </div>
           
           <h1 className="hero__title">
-            <span className="hero__name">Danil</span>
-            <span className="hero__surname">Nedavniy</span>
+            <p>Danylo</p>
+            <p><span className='hero__surname'>Nedavnii</span></p>
           </h1>
           
           <div className="hero__role">
@@ -80,11 +76,33 @@ function Hero() {
             <div className="role__cursor"></div>
           </div>
           
-          <p className="hero__description">
-            I build exceptional digital experiences that are fast, accessible, 
-            visually appealing, and responsive. Passionate about clean code 
-            and modern web technologies.
-          </p>
+          <div className="hero__description">
+            <p>
+              Frontend developer who builds websites the right way.
+              <br />
+              Websites that work exactly as intended.
+            </p>
+
+            <p>
+              No hacks. No random decisions. No “good enough.”
+            </p>
+
+            <p>
+              For me, quality isn’t a checkbox — it’s the foundation of the product.
+              Thoughtful architecture, clean code, predictable interfaces, and attention to detail aren’t extras — they’re the standard.
+            </p>
+
+            <p>I build interfaces that:</p>
+
+            <ul>
+              <li>Work <span className=''>reliably</span></li>
+              <li>Look clean</li>
+              <li>Scale properly</li>
+              <li>Don’t break a month later</li>
+            </ul>
+
+            <p>If it’s built — it’s built right.</p>
+        </div>
           
           <div className="hero__stats">
             <div className="stat__item">
