@@ -129,7 +129,7 @@ function Contact() {
               </div>
               <h3>Location</h3>
               <p>Katowice, PL</p>
-              <a href='#' className='info__link'>
+              <a href='https://maps.app.goo.gl/vBxM84XKUBs6od8cA' className='info__link' target='_blank'>
                 Get directions 
               </a>
             </div>
