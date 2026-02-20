@@ -146,37 +146,37 @@
 .navigation__links {
     display: flex;
     flex-direction: column;
+    align-items: flex-start; 
     gap: 0.75rem;
 }
 
 .nav__link {
+    display: inline-flex;       
+    align-items: center;
+    position: relative;         
     color: var(--text-secondary);
     text-decoration: none;
     font-size: 0.875rem;
-    transition: all 0.3s ease;
-    position: relative;
-    padding-left: 0;
-    display: flex;
-    align-items: center;
+    transition: color 0.3s ease;
+    padding-left: 0;            
 }
 
 .nav__link::before {
     content: '→';
     position: absolute;
-    left: 0;
+    left: -1.2em;               
     opacity: 0;
-    transform: translateX(-10px);
+    transform: translateX(-5px);
     transition: all 0.3s ease;
 }
 
 .nav__link:hover {
     color: #06b6d4;
-    padding-left: 1.25rem;
 }
 
 .nav__link:hover::before {
     opacity: 1;
-    transform: translateX(0);
+    transform: translateX(0);   
 }
 
 /* Contact Info */
@@ -244,6 +244,10 @@
     text-decoration: none;
     transition: all 0.3s ease;
     display: block;
+}
+
+.contact__value a {
+    font-style: none;
 }
 
 .contact__value:hover {

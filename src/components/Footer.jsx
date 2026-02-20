@@ -29,7 +29,8 @@ function Footer() {
               <span className='logo__text'>DN</span>
             </div>
             <p className='brand__description'>
-              Frontend Developer creating modern, responsive web experiences with React and modern technologies.
+              Frontend developer who builds websites the right way
+              <br />Websites that work exactly as intended
             </p>
             <div className='brand__socials'>
               <a href='https://github.com/Nedavniy' className='social__link' aria-label='GitHub'>
@@ -62,7 +63,6 @@ function Footer() {
               <a href='#home' className='nav__link'>Home</a>
               <a href='#about' className='nav__link'>About</a>
               <a href='#projects' className='nav__link'>Portfolio</a>
-              <a href='#skills' className='nav__link'>Skills</a>
               <a href='#contact' className='nav__link'>Contact</a>
             </nav>
           </div>
@@ -101,7 +101,7 @@ function Footer() {
                 </div>
                 <div>
                   <p className='contact__label'>Location</p>
-                  <p className='contact__value'>Poland, Katowice</p>
+                  <a className='contact__value' target='_blank' href="https://maps.app.goo.gl/vBxM84XKUBs6od8cA" >Poland, Katowice</a>
                 </div>
               </div>
             </div>

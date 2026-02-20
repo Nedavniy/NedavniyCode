@@ -18,7 +18,6 @@ function Contact() {
       ...prev,
       [name]: value
     }))
-    // Очищаем ошибку при изменении поля
     if (errors[name]) {
       setErrors(prev => ({
         ...prev,
@@ -61,20 +60,13 @@ function Contact() {
     setSubmitStatus(null)
     
     try {
-      // Имитация отправки на сервер
+      // Imitation
       await new Promise(resolve => setTimeout(resolve, 1500))
-      
-      // В реальном приложении здесь будет fetch/axios запрос
-      // const response = await fetch('/api/contact', {
-      //   method: 'POST',
-      //   headers: { 'Content-Type': 'application/json' },
-      //   body: JSON.stringify(formData)
-      // })
       
       setSubmitStatus('success')
       setFormData({ name: '', email: '', message: '' })
       
-      // Сбрасываем статус через 5 секунд
+      // Status reset after 5 sec
       setTimeout(() => {
         setSubmitStatus(null)
       }, 5000)
@@ -98,15 +90,11 @@ function Contact() {
       <div className='contact__container'>
         {/* Header */}
         <div className='contact__header'>
-          <div className='contact__badge'>
-            <Mail size={16} />
-            <span>Get in touch</span>
-          </div>
           <h1 className='contact__title'>
             Let's <span className='gradient__text'>Connect</span>
           </h1>
           <p className='contact__subtitle'>
-            Have a project in mind? Let's discuss how we can bring your ideas to life.
+            Looking for exciting projects and opportunities. Let’s discuss how I can contribute to your team!
           </p>
         </div>
 
@@ -120,7 +108,7 @@ function Contact() {
               <h3>Email</h3>
               <p>nedavniidanylo@gmail.com</p>
               <a href='mailto:nedavniidanylo@gmail.com' className='info__link'>
-                Send message →
+                Send message 
               </a>
             </div>
 
@@ -131,7 +119,7 @@ function Contact() {
               <h3>Phone</h3>
               <p>+48 883 063 828</p>
               <a href='tel:+48883063828' className='info__link'>
-                Call now →
+                Call now 
               </a>
             </div>
 
@@ -142,7 +130,7 @@ function Contact() {
               <h3>Location</h3>
               <p>Katowice, PL</p>
               <a href='#' className='info__link'>
-                Get directions →
+                Get directions 
               </a>
             </div>
           </div>

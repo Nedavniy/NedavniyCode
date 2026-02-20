@@ -233,26 +233,7 @@ function About() {
           </div>
         </div>
 
-        <div className={`about__image ${isVisible ? 'visible' : ''}`}>
-          <div className='image__container'>
-            <img className='about__img--bg' src={InfoImgBg} alt='Background pattern' />
-            <img className='about__img--front' src={InfoImg} alt='Danil Nedavniy' />
-            
-            <div className='image__overlay'></div>
-            
-            <div className='image__badge'>
-              <span className='badge__icon'>💻</span>
-              <div className='badge__content'>
-                <span className='badge__title'>Currently Working On</span>
-                <span className='badge__text'>React Projects</span>
-              </div>
-            </div>
-            
-            <div className='image__floating image__floating--1'></div>
-            <div className='image__floating image__floating--2'></div>
-            <div className='image__floating image__floating--3'></div>
-          </div>
-        </div>
+       
       </div>
     </section>
   )
